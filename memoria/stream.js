@@ -5,6 +5,6 @@ let data= ''
 
 let readablestream= fs.createReadStream(__dirname+ '/input.txt')
 
-readablestream.on('data', function(chunk){
+readablestream.on('data', (chunk)=>{
     console.log(chunk.toString());
 })
